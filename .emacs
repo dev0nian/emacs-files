@@ -1,4 +1,4 @@
-(require 'package)
+require 'package)
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -12,7 +12,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
- '(package-selected-packages (quote (slime evil-visual-mark-mode))))
+ '(package-selected-packages (quote (company slime evil-visual-mark-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -24,4 +24,6 @@
 
 (setq inferior-lisp-program "/usr/local/bin/clisp")
 (setq slime-contribs '(slime-fancy))
+(global-set-key (kbd "<S-return>") 'evil-force-normal-state)
+(add-hook 'after-init-hook 'global-company-mode)
 
