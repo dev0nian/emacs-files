@@ -30,3 +30,8 @@
 (global-set-key (kbd "<S-return>") 'evil-force-normal-state)
 ;; Disable system sound for various actions
 (setq visible-bell 1)
+(tool-bar-mode -1)
+;; Save session
+(desktop-save-mode 1)
+;; Highlight current line
+(global-hl-line-mode 1)
