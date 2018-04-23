@@ -35,3 +35,5 @@
 (desktop-save-mode 1)
 ;; Highlight current line
 (global-hl-line-mode 1)
+;; Hide scroll bar
+(toggle-scroll-bar -1)
