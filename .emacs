@@ -1,4 +1,4 @@
-require 'package)
+(require 'package)
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -24,6 +24,9 @@ require 'package)
 
 (setq inferior-lisp-program "/usr/local/bin/clisp")
 (setq slime-contribs '(slime-fancy))
-(global-set-key (kbd "<S-return>") 'evil-force-normal-state)
+;; Enable company mode is all buffers
 (add-hook 'after-init-hook 'global-company-mode)
-
+;; Custom key mappings
+(global-set-key (kbd "<S-return>") 'evil-force-normal-state)
+;; Disable system sound for various actions
+(setq visible-bell 1)
