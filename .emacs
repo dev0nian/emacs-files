@@ -37,3 +37,7 @@
 (global-hl-line-mode 1)
 ;; Hide scroll bar
 (toggle-scroll-bar -1)
+;; Better wrapping
+(global-visual-line-mode 1)
+;; Show line numbers
+(global-linum-mode 1)
